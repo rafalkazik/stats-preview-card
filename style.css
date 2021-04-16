@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 600px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 5px;
+  color: white;
+}
+
+.top-img {
+  width: 90vw;
+  max-width: 600px;
+  min-height: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: url("./images/image-header-mobile.jpg"), rgba(170, 92, 219, 0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+h1 {
+  margin: 50px 30px 30px 30px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.h1-word {
+  color: hsl(277, 64%, 61%);
+}
+
+.main-paragraph {
+  margin: 0 30px 10px 30px;
+  text-align: center;
+  line-height: 1.618;
+  font-size: 1.6rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+div p {
+  text-align: center;
+}
+
+.all-stats {
+  margin-bottom: 20px;
+}
+
+.stats {
+  margin: 30px;
+}
+
+.stat-number {
+  margin-bottom: 5px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.stat-info {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+    width: 75vw;
+    max-width: 1024px;
+    height: 60vh;
+  }
+  .top-img {
+    width: 37.5vw;
+    max-width: 1024px;
+    margin-left: 10px;
+    height: 60vh;
+    order: 2;
+    background: url("./images/image-header-desktop.jpg"),
+      rgba(170, 92, 219, 0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+  }
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 37.5vw;
+    padding: 3rem 5rem 3rem 3rem;
+  }
+  .all-stats {
+    display: flex;
+  }
+  h1 {
+    text-align: left;
+  }
+
+  .main-paragraph {
+    text-align: left;
+  }
+  div p {
+    text-align: left;
+  }
+  .stats {
+    margin-right: 2rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-info {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+}
